@@ -5,7 +5,7 @@
         url(font/Roboto-Bold.ttf),
         url(font/Roboto-BoldItalic.ttf),
         url(font/Roboto-Italic.ttf),
-        url(font/Roboto-Light.ttf),
+        url(font/Roboto-Light.ttf)
         url(font/Roboto-LightItalic.ttf),
         url(font/Roboto-Medium.ttf),
         url(font/Roboto-MediumItalic.ttf),
@@ -15,7 +15,7 @@
   } 
 body{
     margin: 0px;
-    font-family: Roboto;
+    font-family: Roboto-Regular;
 }
 .filter-white{
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(104deg) brightness(109%) contrast(107%);
@@ -110,20 +110,35 @@ button{
     grid-template-columns: 4fr 2fr;
     min-height: 85vh;
     padding-top: 25px;
+    padding-left: 30px;
 }
 .cardsWoLabel{
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 25px;
+    
 }
 .card{
     padding:20px;
-    width: 280px;
-    height:150px;
-    border:solid red;
+    width: 23vw;
+    height:18vh;
     background-color: white;
+    border-radius: 5px;
+    position: relative;
+	box-shadow: -10px 0px 0px 0px #FFBD19;
+    overflow: hidden;
+   
+}
+.cardIcons{
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem;
+    grid-template-rows: 5fr 1fr 1fr;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
 }
 .trendingAndAnnouncments{
     display: flex;
@@ -133,4 +148,9 @@ button{
 .trending{
     grid-row: 2/4;
     grid-column: 2/3;
+}
+.lorem{
+    font-size:small;
+    font-family: Roboto-Light;
+    color: #3e454a;
 }
