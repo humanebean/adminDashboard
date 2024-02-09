@@ -23,6 +23,12 @@ body{
 .filter-gold{
     filter: invert(79%) sepia(81%) saturate(3449%) hue-rotate(2deg) brightness(108%) contrast(101%);
 }
+.filter-red{
+    filter: invert(30%) sepia(66%) saturate(3183%) hue-rotate(345deg) brightness(90%) contrast(88%);
+}
+.filter-green{
+    filter: invert(58%) sepia(81%) saturate(451%) hue-rotate(67deg) brightness(104%) contrast(82%);
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -129,6 +135,7 @@ button{
     position: relative;
 	box-shadow: -10px 0px 0px 0px #FFBD19;
     overflow: hidden;
+    box-shadow: 0px 5px 5px -4px #7e8f9c;
    
 }
 .cardIcons{
@@ -145,12 +152,45 @@ button{
     flex-direction: column;
     gap: 20px;
 }
+.announcments{
+    background-color: white;
+    padding: 20px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    max-height: 30vh;
+    max-width: 20vw;
+    box-shadow: 0px 5px 5px -4px #7e8f9c;
+}
+.bottomLine{
+    background-color: rgba(140, 164, 194, 0.397);
+    min-height: 1px;
+    min-width: 17vw;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0px 5px 5px -4px #7e8f9c;
+}
 .trending{
-    grid-row: 2/4;
-    grid-column: 2/3;
+    display: flex;
+    min-height: 27.25vh;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1rem;
+    box-shadow: 0px 5px 5px -4px #7e8f9c;
 }
 .lorem{
     font-size:small;
     font-family: Roboto-Light;
     color: #3e454a;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    
 }
