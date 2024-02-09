@@ -147,12 +147,12 @@ button{
     right: 0;
     
 }
-.trendingAndAnnouncments{
+.trendingAndAnnouncements{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.announcments{
+.announcements{
     background-color: white;
     padding: 20px;
     margin-left: 1rem;
